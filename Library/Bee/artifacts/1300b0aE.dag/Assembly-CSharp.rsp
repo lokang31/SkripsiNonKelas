@@ -337,6 +337,7 @@
 "Assets/Constants.cs"
 "Assets/EnemyFollow.cs"
 "Assets/enemyhealth.cs"
+"Assets/Healthmanager.cs"
 "Assets/NewBehaviourScript.cs"
 "Assets/Shootscript.cs"
 "Assets/Spawnscript.cs"

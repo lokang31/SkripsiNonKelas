@@ -25,7 +25,7 @@ public class enemyhealth : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
         }
     }
     public void SpawnCollectible()
