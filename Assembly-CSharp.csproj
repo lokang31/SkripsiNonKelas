@@ -66,6 +66,7 @@
     <Compile Include="Assets\Spawnscript.cs" />
     <Compile Include="Assets\Constants.cs" />
     <Compile Include="Assets\CollectibleScript.cs" />
+    <Compile Include="Assets\RobotSphere\Assets\Scripts\RobotFreeAnim.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\App42_Unity3D_SDK_4.3.dll" />

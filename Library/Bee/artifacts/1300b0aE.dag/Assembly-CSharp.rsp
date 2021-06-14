@@ -339,6 +339,7 @@
 "Assets/enemyhealth.cs"
 "Assets/Healthmanager.cs"
 "Assets/NewBehaviourScript.cs"
+"Assets/RobotSphere/Assets/Scripts/RobotFreeAnim.cs"
 "Assets/Shootscript.cs"
 "Assets/Spawnscript.cs"
 "Assets/Test.cs"

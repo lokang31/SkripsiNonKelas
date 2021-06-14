@@ -10,14 +10,17 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-      //  if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) > 5f)
-     //   {
-            rb.velocity = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position) * 0.1f;
+        //  if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) > 5f)
+        //   {
+        // rb.velocity = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position) * 0.1f;
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 0.001f);
+        transform.LookAt(player.transform);
     //    }
    //     else
    //     {
