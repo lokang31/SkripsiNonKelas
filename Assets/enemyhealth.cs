@@ -5,10 +5,14 @@ using UnityEngine;
 public class enemyhealth : MonoBehaviour
 {
     public GameObject collectiblePrefab;
+    GamemanagerScript gameManager;
+    public int health;
+    public int scoreValue;
     // Start is called before the first frame update
     void Start()
     {
         
+        gameManager = GameObject.Find("GameManager").GetComponent<GamemanagerScript>();
     }
 
     // Update is called once per frame
@@ -20,8 +24,8 @@ public class enemyhealth : MonoBehaviour
     {
         if(other.tag == "Bullet")
         {
-            Destroy(this.gameObject);
-            SpawnCollectible();
+            health--;
+            CheckEnemyHealth();
         }
         else
         {
@@ -31,6 +35,15 @@ public class enemyhealth : MonoBehaviour
     public void SpawnCollectible()
     {
         Instantiate(collectiblePrefab, transform.position, Quaternion.identity);
+    }
+    public void CheckEnemyHealth()
+    {
+        if (health <= 0)
+        {
+            gameManager.Score += scoreValue;
+            Destroy(this.gameObject);
+            SpawnCollectible();
+        }
     }
     
 }

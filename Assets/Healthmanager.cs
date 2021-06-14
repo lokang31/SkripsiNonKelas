@@ -23,12 +23,12 @@ public class Healthmanager : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Enemy")
-        {
-            Destroy(other.gameObject);
-            currHealth--;
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.tag == "Enemy")
+    //    {
+    //        Destroy(other.gameObject);
+    //        currHealth--;
+    //    }
+    //}
 }

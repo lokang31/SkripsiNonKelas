@@ -27,4 +27,13 @@ public class EnemyFollow : MonoBehaviour
     //        rb.velocity = Vector3.zero;
     //    }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Destroy(this.gameObject);
+            other.GetComponent<Healthmanager>().currHealth--;
+        }
+    }
 }
