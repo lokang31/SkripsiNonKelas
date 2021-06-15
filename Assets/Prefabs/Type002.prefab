@@ -525,9 +525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b4ef9cef9f75c4c97d4f0ac0861dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectiblePrefab: {fileID: 8017982935308548989, guid: 294d2b859b748bb4593a23c73ab0828a, type: 3}
+  collectibleAmmoPrefab: {fileID: 4851412250752156593, guid: 66857846cbb0afe4e8af818c2d4677de, type: 3}
+  collectibleHealthPrefab: {fileID: 3801489885998014374, guid: 18df7e74b08e04d4cbb4b99c3702956b, type: 3}
   health: 3
   scoreValue: 3
+  type: 2
 --- !u!114 &5945539099515857921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,8 +544,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2897586539839714719, guid: f85f419d85772a04c90ad3f9223c4364, type: 3}
   shootPoint: {fileID: 259842147477172683}
-  bulletSpeed: 100
+  bulletSpeed: 50
   cooldownTime: 4
+  damageDealt: 3
 --- !u!54 &5945539099515857923
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ TagManager:
   - Type002
   - Type003
   - EnemyBullet
+  - Ammo
   layers:
   - Default
   - TransparentFX

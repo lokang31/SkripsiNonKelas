@@ -56,19 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\enemyhealth.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\EnemyFollow.cs" />
-    <Compile Include="Assets\Shootscript.cs" />
-    <Compile Include="Assets\UImanager.cs" />
-    <Compile Include="Assets\Test.cs" />
-    <Compile Include="Assets\Healthmanager.cs" />
-    <Compile Include="Assets\Spawnscript.cs" />
-    <Compile Include="Assets\Constants.cs" />
+    <Compile Include="Assets\Scripts\enemyhealth.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\Shootscript.cs" />
+    <Compile Include="Assets\Scripts\UImanager.cs" />
+    <Compile Include="Assets\Scripts\EnemyFollowShoot.cs" />
+    <Compile Include="Assets\Scripts\GamemanagerScript.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\Healthmanager.cs" />
+    <Compile Include="Assets\Scripts\Spawnscript.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
     <Compile Include="Assets\RobotSphere\Assets\Scripts\RobotFreeAnim.cs" />
-    <Compile Include="Assets\CollectibleScript.cs" />
-    <Compile Include="Assets\GamemanagerScript.cs" />
-    <Compile Include="Assets\EnemyFollowShoot.cs" />
+    <Compile Include="Assets\Scripts\CollectibleScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyBulletScript.cs" />
+    <Compile Include="Assets\Scripts\SceneManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\App42_Unity3D_SDK_4.3.dll" />
