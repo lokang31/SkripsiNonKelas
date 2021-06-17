@@ -7,10 +7,12 @@ public class EnemyBulletScript : MonoBehaviour
     // Start is called before the first frame update
     public int damageDealt;
     Healthmanager playerHealth;
+    public GamemanagerScript gameManager;
  
     void Start()
     {
         playerHealth = GameObject.Find("Player").GetComponent<Healthmanager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GamemanagerScript>();
        
     }
 
@@ -24,6 +26,7 @@ public class EnemyBulletScript : MonoBehaviour
         if(other.tag == "Player")
         {
             playerHealth.currHealth -= damageDealt;
+            gameManager.CheckPlayerAlive();
         }
     }
 }

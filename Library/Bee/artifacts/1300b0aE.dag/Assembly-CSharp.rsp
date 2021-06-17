@@ -333,6 +333,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/app42Manager.cs"
+"Assets/NicknameScript.cs"
 "Assets/RobotSphere/Assets/Scripts/RobotFreeAnim.cs"
 "Assets/Scripts/CollectibleScript.cs"
 "Assets/Scripts/Constants.cs"
