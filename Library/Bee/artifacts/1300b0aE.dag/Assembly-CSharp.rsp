@@ -334,6 +334,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/app42Manager.cs"
+"Assets/AudioScript.cs"
 "Assets/NicknameScript.cs"
 "Assets/RobotSphere/Assets/Scripts/RobotFreeAnim.cs"
 "Assets/Scripts/CollectibleScript.cs"
@@ -350,6 +351,7 @@
 "Assets/Scripts/Spawnscript.cs"
 "Assets/Scripts/Test.cs"
 "Assets/Scripts/UImanager.cs"
+"Assets/SetAudio.cs"
 -langversion:8.0
 
 /deterministic

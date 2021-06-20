@@ -18,6 +18,8 @@ public class Test : MonoBehaviour, App42CallBack
     public List<int> userScore;
     public Text nameText;
     public Text scoreText;
+    public GameObject prefabsNama,panelNama;
+    public int count;
     public void OnException(Exception ex)
     {
         print(ex);
@@ -59,39 +61,54 @@ public class Test : MonoBehaviour, App42CallBack
         App42API.SetOfflineStorage(true, 20);
         App42Log.SetDebug(true);
         lead = false;
+        count = 0;
+        Invoke("LoadLeaderboard", 1f);
+        Invoke("ShowLeaderboard", 2f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (userScore.Count != 0)
-        //{
-        //  //  scoreText.text = userScore[0].ToString();
-        //}
-        //if (userName[0] != null)
-        //{
-        // //   nameText.text = userName[0];
-        //}
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            scoreBoardService = App42API.BuildScoreBoardService();
-            scoreBoardService.SaveUserScore("Augmented Reality", "CC", 70, this);
-        }
-        else if (Input.GetKeyDown(KeyCode.L))
-        {
-            scoreBoardService = App42API.BuildScoreBoardService();
-            int max = 10;
-            scoreBoardService.GetTopNRankers("Augmented Reality", max, this);
-            lead = true;
-            
-        }
+      
+        
+       
+      
+       
+    }
+    public void LoadLeaderboard()
+    {
+        scoreBoardService = App42API.BuildScoreBoardService();
+        int max = 5;
+        scoreBoardService.GetTopNRankers("Augmented Reality", max, this);
+        lead = true;
+    }
+    public void ShowLeaderboard()
+    {
 
-        if (Input.GetMouseButtonDown(0))
+        if (userName.Count > 0)
         {
-            scoreBoardService = App42API.BuildScoreBoardService();
-            int max = 10;
-            scoreBoardService.GetTopNRankers("Augmented Reality", max, this);
-            lead = true;
+
+            do
+            {
+                print("usercount" + userName.Count);
+                if (count < userName.Count)
+                {
+                    GameObject skorNama = Instantiate(prefabsNama, panelNama.transform.position, Quaternion.identity);
+                    skorNama.transform.SetParent(panelNama.transform);
+                    skorNama.transform.localScale = new Vector3(1, 1, 1);
+                    skorNama.transform.GetChild(0).GetComponent<Text>().text = (count + 1).ToString();
+                    skorNama.transform.GetChild(1).GetComponent<Text>().text = userName[count];
+                    skorNama.transform.GetChild(2).GetComponent<Text>().text = userScore[count].ToString();
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            while (count < userName.Count);
+
+
         }
     }
 }

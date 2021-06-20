@@ -60,10 +60,12 @@
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\Shootscript.cs" />
+    <Compile Include="Assets\app42Manager.cs" />
     <Compile Include="Assets\Scripts\UImanager.cs" />
     <Compile Include="Assets\Scripts\SceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\EnemyFollowShoot.cs" />
     <Compile Include="Assets\Scripts\EnemyBulletScript.cs" />
+    <Compile Include="Assets\NicknameScript.cs" />
     <Compile Include="Assets\Scripts\GamemanagerScript.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\Healthmanager.cs" />
@@ -71,8 +73,8 @@
     <Compile Include="Assets\Scripts\Constants.cs" />
     <Compile Include="Assets\RobotSphere\Assets\Scripts\RobotFreeAnim.cs" />
     <Compile Include="Assets\Scripts\CollectibleScript.cs" />
-    <Compile Include="Assets\NicknameScript.cs" />
-    <Compile Include="Assets\app42Manager.cs" />
+    <Compile Include="Assets\AudioScript.cs" />
+    <Compile Include="Assets\SetAudio.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\App42_Unity3D_SDK_4.3.dll" />

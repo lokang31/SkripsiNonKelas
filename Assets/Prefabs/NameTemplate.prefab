@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8383096767767507852}
   - component: {fileID: 4165338313002581802}
   m_Layer: 5
-  m_Name: Num (2)
+  m_Name: Skor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8920092405910075917}
   - component: {fileID: 4685092544516894277}
   m_Layer: 5
-  m_Name: Num (1)
+  m_Name: Nama
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
