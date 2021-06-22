@@ -18,6 +18,7 @@ public class Shootscript : MonoBehaviour
     bool isReload;
     public float reloadDelay;
     float reloadCounter;
+    public Slider reloadSlider;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,8 @@ public class Shootscript : MonoBehaviour
         }
         if(isReload == true)
         {
+            reloadSlider.gameObject.SetActive(true);
+            reloadSlider.value = reloadCounter / reloadDelay;
             reloadCounter += Time.deltaTime;
             if(reloadCounter >= reloadDelay)
             {
@@ -59,6 +62,7 @@ public class Shootscript : MonoBehaviour
 
                 }
                 reloadCounter = 0;
+                reloadSlider.gameObject.SetActive(false);
             }
         }
         currentAmmoText.text = $"{currentAmmo} / {maxAmmo}";
